@@ -4,9 +4,15 @@ import datetime as dt
 # Create your models here.
 class Location(models.Model):
     name = models.CharField(max_length=30)
+    
+    def __str__(self):
+        return self.name
 
 class categories(models.Model):
     name = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.name
 
 class Photos(models.Model):
     image = models.ImageField(upload_to = 'photos/', null = True)
