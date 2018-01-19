@@ -34,7 +34,7 @@ write and email to me at ``biinewtondev@gmail.com`` with the subject ``GALLERIA`
 
 ## Authors
 
-* **Newton Bii** - *Initial work* - [GALLERIA](https://github.com/PurpleBooth)
+* **Newton Bii** - *Initial work* - [GALLERIA](https://github.com/NewtonBii/galleria)
 
 
 ## License
