@@ -1,6 +1,8 @@
 .wrap {
       overflow: hidden;
       margin: 10px;
+      margin-top: 100px;
+      font-family: 'Chewy', cursive;
     }
     .box {
       float: left;
@@ -66,3 +68,11 @@
         padding-bottom: 25%;
       }
     }
+
+#navbarMain{
+  margin: 1.2em;
+  padding: 1em;
+  background-color: #C0392B;
+  border-radius: 1.4em;
+  border-style: ridge;
+}
