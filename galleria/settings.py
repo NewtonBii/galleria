@@ -26,7 +26,7 @@ SECRET_KEY = 'hfd!8x*blmjneo4da@z1-*m9849ftwt3$z6-)ttc5_#jzhfsqb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['newton-gallery.herokuapp.com']
 
 
 # Application definition
