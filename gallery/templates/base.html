@@ -1,0 +1,26 @@
+{% load bootstrap3%}{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"> {% if title %}
+  <title>Galleria </title>
+  {% else %}
+  <title> Galleria </title>
+  {% endif %} {% block styles %} {% bootstrap_css %}
+  <link rel="stylesheet" href="{% static 'css/gallery.css'%}">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand|Amaranth" rel="stylesheet"> {% endblock %}
+
+</head>
+
+<body>
+   {% block scripts %}
+  {%block content %}{% endblock %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+  </script>
+   {% bootstrap_javascript %}{% endblock %}
+</body>
+
+</html>
