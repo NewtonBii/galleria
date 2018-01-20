@@ -1,0 +1,24 @@
+@media only screen and (max-width : 480px) {
+  /* Smartphone view: 1 tile */
+  .wrap {
+    margin-top: 80%;
+  }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+  /* Tablet view: 2 tiles */
+  .wrap {
+    margin-top: 38%;
+  }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+  /* Small desktop / ipad view: 3 tiles */
+  .wrap {
+    margin-top: 35%;
+  }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+  /* Medium desktop: 4 tiles */
+  .wrap {
+    margin-top: 10%;
+  }
+}

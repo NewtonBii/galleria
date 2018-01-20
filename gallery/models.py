@@ -4,7 +4,7 @@ import datetime as dt
 # Create your models here.
 class Location(models.Model):
     name = models.CharField(max_length=30)
-    
+
     def __str__(self):
         return self.name
 
@@ -21,3 +21,8 @@ class Photos(models.Model):
     location_taken = models.ForeignKey(Location)
     category = models.ManyToManyField(categories)
     time_uloaded = models.DateTimeField(auto_now_add=True, null=True)
+
+    @classmethod
+    def search_by_title(cls, search_term):
+        gallery = cls.objects.filter(descripton__icontains=search_term)
+        return gallery
