@@ -92,18 +92,13 @@
   font-size: 1.2em;
 }
 .date{
-  font-weight: bolder;
   position: relative;
+  color: white;
 }
 .under{
   text-decoration: underline;
 }
-.fa-angle-up{
-  font-size: 30px;
-  position: absolute;
-  right: 20px;
-  top: -10px
-}
+
 .line{
   width: 30px;
   margin-left: 0;
