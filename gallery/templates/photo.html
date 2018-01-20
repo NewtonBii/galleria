@@ -1,26 +1,29 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% block content %}
 
-{% block content %}
-
-<div class="main">
-  <div class="container">
-   <div class="picture">
-    </div>
-    <div class="bot-view">
-      <div class="date">
-        March 22, 2016 &nbsp / &nbsp<span class="under">Estonia</span>
-      </div>
-      <hr class="line"/>
-      <div class="info">
-        <div>
-          <p>what an amazing photo</p>
+<div class="product">
+  <div class="left-img2"><img src="{{photo.image.url}}" alt="" /></div>
+  <div class="right-content">
+    <div class="content-arrow"></div>
+    <div class="content-container">
+      <h2>{{photo.name}}</h2>
+      <div class="bot-view">
+        <div class="date">
+          {{photo.time_uloaded}} / &nbsp<span class="under">{{photo.location_taken}}</span>
         </div>
-      </div>
-      <div class="footer">
-        <p>Categories: </p>
+        <hr class="line" />
+        <div class="info">
+          <div>
+            <span>{{photo.descripton}}</span>
+        </div>
+        <hr class="line" />
+        <div class="footer">
+          <p>{{photo.categories.}}</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 {% endblock %}

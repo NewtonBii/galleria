@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns=[
  url(r'^$', views.my_gallery, name='myGallery'),
+ url(r'^photo/(\d+)', views.single_photo, name = 'myPhoto')
 ]
 
 if settings.DEBUG:

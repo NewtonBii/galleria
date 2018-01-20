@@ -1,24 +1,95 @@
-body{
-  padding-top: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 85%;
-}
-.container{
-  max-width: 400px;
-  margin: 0 auto;
-  box-shadow: 0 0 10px #202020;
-}
-.picture{
-  background:url(https://unsplash.it/1080/720/?random) no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 0;
-  padding-top: 110%;
+.product{
   position: relative;
+  width: 1000px;
+  height: 500px;
+  background-color: #888;
+  margin: 20px auto;
+  margin-top: 10%
+}
+
+.left-img2 img{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+.right-content{
+  z-index: 2;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #222;
+}
+
+.content-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: -30px;
+	width: 0;
+	height: 0;
+	border-top: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-right:30px solid #222;
+}
+
+.content-container{
+  height: 100%;
+  padding: 0 10%;
+  overflow: hidden;
+}
+
+.content-container h2{
+  text-align: center;
+  color: #eee;
+  font-weight: 300;
+}
+
+.content-container p{
+  text-align: justify;
+  color: #eee;
+  font-weight: 300;
+  height: 400px;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+/*********************/
+/**  Media Queries  **/
+/*********************/
+
+@media (max-width: 1100px) {
+    .product{
+    width: 500px;
+    height: 1000px;
+  }
+
+  .left-img2 img{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+  }
+
+  .right-content{
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+  }
+
+  .content-arrow{
+    top: -30px;
+    left: 50%;
+    margin-left: -30px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #222;
+  }
 }
 
 .bot-view{
   padding: 35px 30px;
+  font-size: 1.2em;
 }
 .date{
   font-weight: bolder;
@@ -27,6 +98,12 @@ body{
 .under{
   text-decoration: underline;
 }
+.fa-angle-up{
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  top: -10px
+}
 .line{
   width: 30px;
   margin-left: 0;
@@ -34,9 +111,15 @@ body{
 }
 .info{
   color: #b3b3b3;
+
 }
 .info div{
   line-height: 20px;
+  font-size: 1em;
+}
+.info span{
+  display: inline-block;
+  width: 49%;
 }
 .footer{
   margin-top: 50px;
