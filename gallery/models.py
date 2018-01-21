@@ -25,18 +25,21 @@ class categories(models.Model):
 
     def delete_category(self):
         self.delete()
-        
+
 
 class Photos(models.Model):
     image = models.ImageField(upload_to = 'photos/', null = True)
     name = models.CharField(max_length=30)
     descripton = models.TextField()
-    location_taken = models.ForeignKey(Location)
+    location_taken = models.ForeignKey(Location, null=True)
     category = models.ManyToManyField(categories)
     time_uloaded = models.DateTimeField(auto_now_add=True, null=True)
 
-    def save_photo(self):
+    def save_image(self):
         self.save()
+
+    def delete_image(self):
+        self.delete()
 
     @classmethod
     def search_by_title(cls, search_term):
