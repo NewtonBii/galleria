@@ -8,6 +8,12 @@ class Location(models.Model):
     def __str__(self):
         return self.name
 
+    def save_location(self):
+        self.save()
+
+    def delete_location(self):
+        self.delete()
+
 class categories(models.Model):
     name = models.CharField(max_length=30)
 
@@ -21,6 +27,9 @@ class Photos(models.Model):
     location_taken = models.ForeignKey(Location)
     category = models.ManyToManyField(categories)
     time_uloaded = models.DateTimeField(auto_now_add=True, null=True)
+
+    def save_photo(self):
+        self.save()
 
     @classmethod
     def search_by_title(cls, search_term):
